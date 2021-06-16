@@ -1,11 +1,24 @@
-import styles from './Footer.module.css'
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
+        <a href='https://www.facebook.com/D-Bread-111968957785306'>
+          <img
+            src='/facebook.png'
+            alt='Facebook Logo'
+            className={styles.logo}
+          />{' '}
+        </a>
+        <a href='https://www.instagram.com/d_bread.c3/'>
+          <img
+            src='/instagram.png'
+            alt='Instagram Logo'
+            className={styles.logo}
+          />{' '}
+        </a>
       </footer>
     </>
-  )
+  );
 }
