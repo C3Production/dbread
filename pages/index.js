@@ -4,7 +4,7 @@ import Footer from '@components/Footer';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
 
   return (
     <div className='container'>
@@ -23,7 +23,7 @@ export default function Home() {
           </a>{' '}
           for more information.
           <br />
-          {t("common:greeting")}
+          {t("greeting")}
         </p>
       </main>
 
