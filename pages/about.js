@@ -3,7 +3,7 @@ import Header from '@components/Header';
 import Footer from '@components/Footer';
 import useTranslation from 'next-translate/useTranslation';
 
-export default function Home() {
+export default function Home(props) {
   const { t } = useTranslation();
 
   return (
@@ -23,7 +23,7 @@ export default function Home() {
           </a>{' '}
           for more information.
           <br />
-          {t("common:greeting")}
+          {t("common:We're making lots of improvements and will be back soon.")}
         </p>
       </main>
 
