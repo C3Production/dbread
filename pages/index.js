@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='container'>
       <Head>
-        <title>D' Bread</title>
+        <title>D&apos; Bread</title>
         <link rel='icon' type='image/png' href='/logo.png' />
       </Head>
 
@@ -23,7 +23,7 @@ export default function Home() {
           </a>{' '}
           for more information.
           <br />
-          {t("greeting")}
+          {t('greeting')}
         </p>
       </main>
 

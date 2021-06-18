@@ -9,7 +9,7 @@ export default function Home(props) {
   return (
     <div className='container'>
       <Head>
-        <title>D' Bread</title>
+        <title>About</title>
         <link rel='icon' type='image/png' href='/logo.png' />
       </Head>
 
