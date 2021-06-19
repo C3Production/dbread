@@ -10,7 +10,6 @@ export default function Home() {
     <div className='container'>
       <Head>
         <title>D&apos; Bread</title>
-        <link rel='icon' type='image/png' href='/logo.png' />
       </Head>
 
       <main>

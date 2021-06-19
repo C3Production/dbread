@@ -10,7 +10,6 @@ export default function Home(props) {
     <div className='container'>
       <Head>
         <title>About</title>
-        <link rel='icon' type='image/png' href='/logo.png' />
       </Head>
 
       <main>
