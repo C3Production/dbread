@@ -22,7 +22,10 @@ export default function Home() {
           <Trans
             i18nKey='common:i2'
             components={[
-              <Component href='https://www.facebook.com/D-Bread-111968957785306' />,
+              <Component
+                key='i2'
+                href='https://www.facebook.com/D-Bread-111968957785306'
+              />,
             ]}
           />
           <br />
