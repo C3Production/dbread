@@ -1,0 +1,13 @@
+@include media-breakpoint-down(md) {
+  // .container {
+  //   padding: 0;
+  // }
+  .navbar-right {
+    .navbar-collapse {
+      width: 30%;
+    }
+    .navbar-collapse.collapsing {
+      left: 70%;
+    }
+  }
+}

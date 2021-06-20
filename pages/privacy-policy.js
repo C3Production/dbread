@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '@components/Header';
-import Footer from '@components/Footer';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
@@ -484,8 +483,6 @@ export default function Home() {
           </tbody>
         </table>
       </main>
-
-      <Footer />
     </div>
   );
 }

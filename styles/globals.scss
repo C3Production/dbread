@@ -19,16 +19,16 @@ main {
   align-items: center;
 }
 
-// $theme-colors: (
-// 'primary': $primary,
-// 'secondary': $secondary,
-// 'success': $success,
-// 'info': $info,
-// 'warning': $warning,
-// 'danger': $danger,
-// 'light': $light,
-// 'dark': $dark,,
-// );
+$theme-colors: (
+  'primary': #fdd835,
+  // 'secondary': $secondary,
+  // 'success': $success,
+  // 'info': $info,
+  // 'warning': $warning,
+  // 'danger': $danger,
+  'light': white,
+  // 'dark': $dark,,,
+);
 
 // $colors: (
 //   'blue': $blue,
@@ -91,60 +91,29 @@ $container-max-widths: (
 ::-webkit-scrollbar-thumb:hover {
   background: $primary;
 }
-@include media-breakpoint-down(lg) {
-  .navbar-right {
-    .navbar-collapse {
-      position: fixed;
-      top: 66px;
-      bottom: 0;
-      left: 100%;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-bottom: 15px;
-      width: 20%;
-      transition: all 0.4s ease;
-      display: block;
-      background-color: $light;
-    }
-    .navbar-collapse.collapsing {
-      height: auto !important;
-      // margin-left: 50%;
-      left: 80%;
-      transition: all 0.2s ease;
-    }
-    .navbar-collapse.show {
-      left: auto;
-      right: 0;
-    }
-  }
 
-  .navbar-toggler:focus {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-  }
-  .btn:focus {
-    box-shadow: none;
-    -webkit-box-shadow: none;
+// .container {
+//   margin: 0;
+// }
+
+@import './xxl';
+@import './xl';
+@import './lg';
+@import './md';
+@import './sm';
+
+.layout {
+  .page {
+    // background-color: #bed2e1;
+    background-color: #d1d7de;
   }
 }
 
-@include media-breakpoint-down(md) {
-  .navbar-right {
-    .navbar-collapse {
-      width: 30%;
-    }
-    .navbar-collapse.collapsing {
-      left: 70%;
-    }
-  }
+.navbar-toggler:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
-@include media-breakpoint-down(sm) {
-  .navbar-right {
-    .navbar-collapse {
-      width: 50%;
-    }
-    .navbar-collapse.collapsing {
-      left: 50%;
-    }
-  }
+.btn:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }

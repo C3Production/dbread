@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Header from '@components/Header';
-import Footer from '@components/Footer';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Home(props) {
@@ -25,8 +24,6 @@ export default function Home(props) {
           {t("common:We're making lots of improvements and will be back soon.")}
         </p>
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Header from '@components/Header';
-import Footer from '@components/Footer';
 import useTranslation from 'next-translate/useTranslation';
+import Trans from 'next-translate/Trans';
+
+const Component = (props) => <a {...props} />;
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -13,20 +15,20 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to D' Little Bread Cafe!" />
+        <Header title={t('i0') + " D' Little Bread Cafe!"} />
         <p className='description'>
-          This page is under construction now.
-          <br /> Please visit our{' '}
-          <a href='https://www.facebook.com/D-Bread-111968957785306'>
-            Facebook Page
-          </a>{' '}
-          for more information.
+          {t('i1')}
           <br />
-          {t('greeting')}
+          <Trans
+            i18nKey='common:i2'
+            components={[
+              <Component href='https://www.facebook.com/D-Bread-111968957785306' />,
+            ]}
+          />
+          <br />
+          {t('i3')}
         </p>
       </main>
-
-      <Footer />
     </div>
   );
 }

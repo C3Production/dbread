@@ -24,6 +24,48 @@ const NavBar = () => {
             </Link>
           </div>
           <div className={'nav navbar-nav navbar-right ' + styles.rightNav}>
+            <div className='btn-group'>
+              <button
+                id='languageButton'
+                type='button'
+                className='btn dropdown-toggle'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
+              >
+                <i className='fas fa-globe'></i>
+              </button>
+              <ul
+                className='dropdown-menu dropdown-menu-end'
+                aria-labelledby='languageButton'
+              >
+                <li>
+                  <button
+                    className='dropdown-item'
+                    type='button'
+                    onClick={() => {
+                      router.push(router.pathname, router.pathname, {
+                        locale: 'en',
+                      });
+                    }}
+                  >
+                    English
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className='dropdown-item'
+                    type='button'
+                    onClick={() => {
+                      router.push(router.pathname, router.pathname, {
+                        locale: 'zh',
+                      });
+                    }}
+                  >
+                    简体中文
+                  </button>
+                </li>
+              </ul>
+            </div>
             <button
               className={'navbar-toggler ' + styles.toggler}
               type='button'
@@ -86,50 +128,56 @@ const NavBar = () => {
                   </button>
                 </li>
                 <li className='nav-item dropdown'>
-                  <a
-                    className='nav-link dropdown-toggle'
-                    href='#'
-                    id='navbarDarkDropdownMenuLink'
-                    role='button'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
-                    Hi, WCC
-                  </a>
-                  <ul
-                    className='dropdown-menu dropdown-menu-end'
-                    aria-labelledby='navbarDarkDropdownMenuLink'
-                  >
-                    <li>
-                      <Link href='/my-account'>
-                        <a
-                          className={
-                            'dropdown-item' +
-                            (router.pathname == '/my-account' ? ' active' : '')
-                          }
-                        >
-                          My Account
+                  <div className='btn-group'>
+                    <button
+                      className='btn dropdown-toggle'
+                      type='button'
+                      id='AccountButton'
+                      data-bs-toggle='dropdown'
+                      aria-expanded='false'
+                    >
+                      Hi, WCC
+                    </button>
+                    <ul
+                      className='dropdown-menu dropdown-menu-end'
+                      aria-labelledby='AccountButton'
+                    >
+                      <li>
+                        <Link href='/my-account'>
+                          <a
+                            className={
+                              'dropdown-item' +
+                              (router.pathname == '/my-account'
+                                ? ' active'
+                                : '')
+                            }
+                          >
+                            My Account
+                          </a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href='/my-order'>
+                          <a
+                            className={
+                              'dropdown-item' +
+                              (router.pathname == '/my-order' ? ' active' : '')
+                            }
+                          >
+                            My Order
+                          </a>
+                        </Link>
+                      </li>
+                      <li>
+                        <hr className='dropdown-divider' />
+                      </li>
+                      <li>
+                        <a className='dropdown-item' href='#'>
+                          Sign Out
                         </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/my-order'>
-                        <a
-                          className={
-                            'dropdown-item' +
-                            (router.pathname == '/my-order' ? ' active' : '')
-                          }
-                        >
-                          My Order
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <a className='dropdown-item' href='#'>
-                        Sign Out
-                      </a>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>

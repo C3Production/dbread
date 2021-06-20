@@ -3,6 +3,10 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common"],
-    "/about": ["about"]
+    "/404": ["404"],
+    "/500": ["500"],
+    "/privacy-policy": ["privacy-policy"],
+    "/terms-of-service": ["terms-of-service"],
+    "/about-us": ["about-us"]
   }
 }
