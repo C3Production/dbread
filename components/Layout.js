@@ -1,13 +1,13 @@
-import React from 'react';
+import NavBar from '@components/NavBar';
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      {/* <NavBar />
-        <Notify />
+    <>
+      <NavBar />
+      {/* <Notify />
         <Modal /> */}
       <div className='container'>{children}</div>
-    </div>
+    </>
   );
 };
 

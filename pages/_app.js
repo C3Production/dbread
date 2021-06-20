@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import 'bootstrap/dist/css/bootstrap.css';
 import '@styles/globals.scss';
 import Layout from '@components/Layout';
 import { DataProvider } from '@store/GlobalState';

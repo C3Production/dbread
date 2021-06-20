@@ -264,7 +264,11 @@ export default function Home() {
         <h3>Personal Information</h3>
         <p>
           Your submission of personal information through the store is governed
-          by our <Link href='/privacy-policy'>Privacy Policy</Link>.
+          by our{' '}
+          <Link href='/privacy-policy'>
+            <a>Privacy Policy</a>
+          </Link>
+          .
         </p>
         <h3>Errors, Inaccuracies and Omissions</h3>
         <p>
@@ -446,7 +450,7 @@ export default function Home() {
           <li>
             By visiting this page on our website:{' '}
             <Link href='/contact-us'>
-              https://dbread.vercel.app/contact-us/
+              <a>https://dbread.vercel.app/contact-us/</a>
             </Link>
           </li>
         </ul>

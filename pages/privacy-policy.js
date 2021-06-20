@@ -452,7 +452,7 @@ export default function Home() {
           <li>
             By visiting this page on our website:{' '}
             <Link href='/contact-us'>
-              https://dbread.vercel.app/contact-us/
+              <a>https://dbread.vercel.app/contact-us/</a>
             </Link>
           </li>
         </ul>

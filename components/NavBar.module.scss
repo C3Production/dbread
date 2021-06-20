@@ -1,0 +1,31 @@
+.navBtn {
+  border: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.toggler {
+  border: none;
+}
+.cart {
+  position: relative;
+}
+.cartNumber {
+  position: absolute;
+  padding: 5px 5px;
+  background: #ed143dc2;
+  border-radius: 50%;
+  top: -12px;
+  right: -12px;
+  color: white;
+  font-size: 10px;
+}
