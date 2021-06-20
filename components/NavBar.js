@@ -54,6 +54,18 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li className='nav-item'>
+                  <Link href='/about-us'>
+                    <a
+                      className={
+                        'nav-link' +
+                        (router.pathname == '/about-us' ? ' active' : '')
+                      }
+                    >
+                      About Us
+                    </a>
+                  </Link>
+                </li>
+                <li className='nav-item'>
                   <Link href='/contact-us'>
                     <a
                       className={
@@ -72,6 +84,52 @@ const NavBar = () => {
                   >
                     Sign In
                   </button>
+                </li>
+                <li className='nav-item dropdown'>
+                  <a
+                    className='nav-link dropdown-toggle'
+                    href='#'
+                    id='navbarDarkDropdownMenuLink'
+                    role='button'
+                    data-bs-toggle='dropdown'
+                    aria-expanded='false'
+                  >
+                    Hi, WCC
+                  </a>
+                  <ul
+                    className='dropdown-menu dropdown-menu-end'
+                    aria-labelledby='navbarDarkDropdownMenuLink'
+                  >
+                    <li>
+                      <Link href='/my-account'>
+                        <a
+                          className={
+                            'dropdown-item' +
+                            (router.pathname == '/my-account' ? ' active' : '')
+                          }
+                        >
+                          My Account
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href='/my-order'>
+                        <a
+                          className={
+                            'dropdown-item' +
+                            (router.pathname == '/my-order' ? ' active' : '')
+                          }
+                        >
+                          My Order
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <a className='dropdown-item' href='#'>
+                        Sign Out
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
